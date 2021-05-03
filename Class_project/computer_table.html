@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Employee table</title>
+	<style>
+		body {
+			width: 750px;
+			margin: 0 auto;
+            font-family: "Times New Roman"
+		}
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+			margin: 20px auto;
+		}
+		thead {
+			background-color: yellow;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: .2em 1em .2em .5em;
+			text-align: left;
+			vertical-align: middle;
+		}
+		.right {
+			text-align: right;
+		}
+		tbody tr:nth-child(even) td {
+			background-color: yellow;
+		}
+        figcaption {
+            text-align: center;
+        }
+        .rowspan {
+            background-color: white !important;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        .colspan {
+            text-align: right;
+            font-weight: bold;
+        }
+	</style>
+</head>
+
+<body>
+<figure>
+    <figcaption><h2>U. S. Bureau of Labor Statistics sample data</h2></figcaption>
+    <table>
+        <thead>
+            <tr>
+                <th>Job</th>
+                <th>Median Pay</th>
+                <th class="right">Job Growth through 2024</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computer and Information Research Scientist</td>
+                <td>$108,360 per year</td>
+                <td class="right">11% (2700 more jobs)</td>
+            </tr>
+            <tr>
+                <td>Computer Network Architects</td>
+                <td>$98,430 per year</td>
+                <td class="right">9% (12,700 more jobs)</td>
+            </tr>
+            <tr>
+                <td>Computer Analyst </td>
+                <td>$82,710 per year</td>
+                <td class="right">21% (118,600 more jobs)</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+    <a href="cp.html">back</a>
+</body>
+</html>

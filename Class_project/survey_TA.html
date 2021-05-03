@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: blue; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+        input[type="checkbox"]{
+            width: 13px;
+        }
+	</style>
+</head>
+
+<body>
+<h1>Please complete our survey to become a TA</h1>
+<form name="myform" action="survey_data.html" method="get">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+    
+    <h2>Student Information</h2>
+    <label for="gpa">GPA:</label>
+    <input type="text" name="gpa" id="gpa" placeholder="Three digits" required pattern="\{3}"><br>
+    <label for="s-number">S-number:</label>
+    <input name="text" name="s-number" id="s-number" placeholder="Eight digits" required pattern="\d{8}"><br>
+    
+    <h2>Date</h2>
+    <label for="date">Date:</label>
+    <input type="text" name="date" id="date" required><br>
+    
+    <h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+    <a href="index.html"><div style="text-align: right"> Back Page </div></a>
+</body>
+</html>
